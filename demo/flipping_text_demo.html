@@ -205,7 +205,11 @@ text-decoration: none;
 	</style>
 	<script>
 	  $(document).ready(function(){
-  	  $(".demo1 .intro").flipping_text();
+              $(".demo1 .intro").flipping_text({
+callback:function(){
+  alert('demo1 completed');
+}
+                });
   	  $(".demo2 .intro").flipping_text({
   	    tickerTime: 30
   	  });

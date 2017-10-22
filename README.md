@@ -26,7 +26,7 @@ To create a ticker effect for you typography, simply include the latest jQuery l
 Now all you have to do is laid your HTML markup as shown below:
 
 ````html
-<h1 class="intro">...</h1>
+<h1 class="intro" style="visibility:hidden;">...</h1>
 ````
 ## Markups
 
@@ -36,9 +36,9 @@ With this plugin, you can use a markup to set the delay between each intro anima
 This markup will let you define the time between each animation. The time  will stack up automatically with the previous defined delay time so you do not have to calculate the time by your self. An example is shown below:
 
 ````html
-<h1 class="intro">...</h1>
-<h1 class="intro" data-delay="1000">...</h1>
-<h1 class="intro" data-delay="1000">...</h1>
+<h1 class="intro" style="visibility:hidden;">...</h1>
+<h1 class="intro" data-delay="1000" style="visibility:hidden;">...</h1>
+<h1 class="intro" data-delay="1000" style="visibility:hidden;">...</h1>
 ````
 
 The first intro will animate immediately, the second intro will animate 1000 milliseconds after the first one and the last one will animate 1000 milliseconds after the SECOND one, so 1000ms delay will keep on stacking as you define them in order.

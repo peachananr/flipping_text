@@ -18,7 +18,8 @@ To create a ticker effect for you typography, simply include the latest jQuery l
     customRandomChar: false, // You can use your own random strings by defining them here. The default value is false which will use my random string: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
     tickerCount: 10, // Set the number of characters randomly shown before the real text is shown here. The default value is 10.
     opacityEffect: true, // You can toggle the opacity effect here. Set this to false if you don't want the random text to fade in. The default value is 10.
-    resetOnChange: false // Toggle this to true if you want the plugin to stop and fill in all the text immediately when the user changes browser's tab. The default value is false.
+    resetOnChange: false, // Toggle this to true if you want the plugin to stop and fill in all the text immediately when the user changes browser's tab. The default value is false.
+    callback: function() { alert( 'completed'); } // A callback for when the flipping text is complete.
   });
 ````
 
